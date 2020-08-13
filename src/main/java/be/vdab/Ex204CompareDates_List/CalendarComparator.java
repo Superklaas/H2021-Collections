@@ -1,8 +1,7 @@
-package be.vdab.Ex204CompareCalendar;
+package be.vdab.Ex204CompareDates_List;
 
 import java.time.LocalDate;
 import java.util.Comparator;
-import java.util.GregorianCalendar;
 
 public class CalendarComparator implements Comparator<LocalDate> {
     @Override

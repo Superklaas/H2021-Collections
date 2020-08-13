@@ -1,46 +1,46 @@
-package be.vdab.Ex204CompareCalendar;
+package be.vdab.Ex204CompareDates_List;
 
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
-import java.util.Date;
-import java.util.GregorianCalendar;
+import java.util.List;
 
 public class TestCompareCalendar {
 
     public static void main(String[] args) {
 
         int amountOfDates = 10;
-        LocalDate[] dates = new LocalDate[amountOfDates];
-        String[] datesAsString = new String[amountOfDates];
+        List<LocalDate> dates = new ArrayList<>(amountOfDates);
+        List<String> datesAsString = new ArrayList<>(amountOfDates);
 
-        // array LocalDate objects
+        // list LocalDate objects
         for (int i = 0; i < amountOfDates; i++) {
             LocalDate date = LocalDate.now();
             date = date.plusDays(20-i);
-            dates[i] = date;
+            dates.add(date);
         }
 
-        // print original array
-        System.out.println("\noriginal array");
+        // print original list
+        System.out.println("\noriginal list");
         for (int i = 0; i < amountOfDates; i++) {
-            datesAsString[i] = dates[i].format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+            datesAsString.add(dates.get(i).format(DateTimeFormatter.ofPattern("dd-MM-yyyy")));
         }
         for (int i = 0; i < amountOfDates; i++) {
-            System.out.println(datesAsString[i]);
+            System.out.println(datesAsString.get(i));
         }
 
-        // sort array LocalDate objects
-        sort(dates,new CalendarComparator());
+        // sort list LocalDate objects, DOESN'T WORK
+        Collections.sort(dates, new CalendarComparator());
 
-        // print sorted order
-        System.out.println("\noriginal array");
+        // print sorted list
+        System.out.println("\nsorted list");
         for (int i = 0; i < amountOfDates; i++) {
-            datesAsString[i] = dates[i].format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+            datesAsString.add(dates.get(i).format(DateTimeFormatter.ofPattern("dd-MM-yyyy")));
         }
         for (int i = 0; i < amountOfDates; i++) {
-            System.out.println(datesAsString[i]);
+            System.out.println(datesAsString.get(i));
         }
 
     }
