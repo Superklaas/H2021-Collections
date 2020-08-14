@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Ex208Lottery {
+public class Ex208Lottery<chosenNumber> {
 
     public static void main(String[] args) {
 
@@ -32,13 +32,23 @@ public class Ex208Lottery {
         int counter = 0;
         List<Integer> matchingNumbers = new ArrayList<>();
         for (int i = 0; i < amountOfNumbers; i++) {
+            if (winningNumber.contains(chosenNumber.get(i)) && (matchingNumbers.contains(winningNumber.get(i))==false)) {
+                matchingNumbers.add(winningNumber.get(i));
+                counter++;
+            }
+        }
+
+        // alternative way to compare chosenNumber to winningNumber
+        /*int counter = 0;
+        List<Integer> matchingNumbers = new ArrayList<>();
+        for (int i = 0; i < amountOfNumbers; i++) {
             for (int j = 0; j < amountOfNumbers; j++) {
                 if ((winningNumber.get(i)==chosenNumber.get(j)) && (matchingNumbers.contains(winningNumber.get(i))==false)) {
                     matchingNumbers.add(winningNumber.get(i));
                     counter++;
                 }
             }
-        }
+        }*/
 
         // determine price
         if(winningNumber.equals(chosenNumber)) {

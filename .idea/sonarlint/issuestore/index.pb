@@ -13,3 +13,7 @@ Y
 )src/main/java/be/vdab/Checkpoint2052.java,6/d/6d85e535a851eae5a13c1f2d16a48514047be9c3
 U
 %src/main/java/be/vdab/Listing207.java,e/2/e20b3fa8b10face50e272836e4f494e802c34b25
+c
+3src/main/java/be/vdab/Ex203GuessingTheCapitals.java,5/9/599c751d06ee16d8b8c8469f4f90785288579fa6
+W
+'src/main/java/be/vdab/Ex208Lottery.java,2/9/291bae0fc60291f06f8a095be25f18f1a4c3e940
