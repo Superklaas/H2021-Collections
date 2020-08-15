@@ -17,3 +17,7 @@ c
 3src/main/java/be/vdab/Ex203GuessingTheCapitals.java,5/9/599c751d06ee16d8b8c8469f4f90785288579fa6
 W
 'src/main/java/be/vdab/Ex208Lottery.java,2/9/291bae0fc60291f06f8a095be25f18f1a4c3e940
+a
+1src/main/java/be/vdab/Ex211HashSetOperations.java,8/8/8822736cfb546e70e94e93fdeb1c79c3d9a0ecf9
+Y
+)src/main/java/be/vdab/Checkpoint2153.java,7/0/70ed8e0509990fa7e6e5f62ae530622c37c39b25

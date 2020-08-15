@@ -1,0 +1,7 @@
+
+The program uses a HashMap to store an entry consisting of a word and its count. For each
+word, check whether it is already a key in the map. If not, add an entry to the map with the
+word as the key and value 1. Otherwise, increase the value for the word (key) by 1 in the map.
+Assume the words are case insensitive; for example, Good is treated the same as good.
+
+Display the words in ascending order of occurrence counts.

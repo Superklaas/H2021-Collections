@@ -18,11 +18,11 @@ public class TestCompareCalendar {
         // list LocalDate objects
         for (int i = 0; i < amountOfDates; i++) {
             LocalDate date = LocalDate.now();
-            date = date.plusDays(20-i);
+            date = date.plusDays(20 - i);
             dates.add(date);
         }
 
-        // print original list
+        // print original list (convert to "dd-MM-yyyy" first)
         System.out.println("\noriginal list");
         for (int i = 0; i < amountOfDates; i++) {
             datesAsString.add(dates.get(i).format(DateTimeFormatter.ofPattern("dd-MM-yyyy")));
@@ -34,7 +34,7 @@ public class TestCompareCalendar {
         // sort list LocalDate objects, DOESN'T WORK
         Collections.sort(dates, new CalendarComparator());
 
-        // print sorted list
+        // print sorted list (convert to "dd-MM-yyyy" first)
         System.out.println("\nsorted list");
         for (int i = 0; i < amountOfDates; i++) {
             datesAsString.add(dates.get(i).format(DateTimeFormatter.ofPattern("dd-MM-yyyy")));
@@ -44,21 +44,4 @@ public class TestCompareCalendar {
         }
 
     }
-
-    public static void sort (LocalDate[] dates,Comparator<LocalDate> comparator) {
-        boolean sorted = false;
-        LocalDate temp;
-        while(!sorted) {
-            sorted = true;
-            for (int i = 0; i < dates.length - 1; i++) {
-                if (comparator.compare(dates[i],dates[i+1]) > 0) {
-                    temp = dates[i];
-                    dates[i] = dates[i+1];
-                    dates[i+1] = temp;
-                    sorted = false;
-                }
-            }
-        }
-    }
-
 }
