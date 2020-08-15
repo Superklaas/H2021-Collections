@@ -1,4 +1,0 @@
-EX 20.4
-Implement a new class that implements Comparator of LocalDate class to be able sort the calendar in increasing
-order based on day, month, and year, in that order. Display the LocalDate instance in “dd-MMM-yyyy” format.
-Write a test program with 10 LocalDate instances and display the results after the sort.

@@ -21,6 +21,7 @@ public class Ex219GuessingTheCapitals_Maps {
         map.put("Luxembourg", "Arlon");
 
         Set<Map.Entry<String, String>> entries = map.entrySet();
+
         System.out.println("Enter a province or type stop");
         String input = scan.nextLine();
         while (!input.equals("stop")) {

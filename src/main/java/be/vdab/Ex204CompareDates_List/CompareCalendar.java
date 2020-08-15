@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class TestCompareCalendar {
+public class CompareCalendar {
 
     public static void main(String[] args) {
 

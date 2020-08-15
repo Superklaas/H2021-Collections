@@ -28,7 +28,7 @@ public class CountOccurrenceOfWords {
 
         // sort the map by ascending order of occurrence counts
         Set<Map.Entry<String, Integer>> entries = map.entrySet();
-        List <Map.Entry<String, Integer>> list = new ArrayList<>(entries);
+        List<Map.Entry<String, Integer>> list = new ArrayList<>(entries);
         Collections.sort(list, new OccurenceComparator());
 
         // print entries map
