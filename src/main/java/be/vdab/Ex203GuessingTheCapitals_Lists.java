@@ -2,7 +2,7 @@ package be.vdab;
 
 import java.util.*;
 
-public class Ex203GuessingTheCapitals {
+public class Ex203GuessingTheCapitals_Lists {
 
     public static void main(String[] args) {
 
