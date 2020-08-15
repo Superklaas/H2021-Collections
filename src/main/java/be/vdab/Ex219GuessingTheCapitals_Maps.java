@@ -22,7 +22,7 @@ public class Ex219GuessingTheCapitals_Maps {
 
         Set<Map.Entry<String, String>> entries = map.entrySet();
 
-        System.out.println("Enter a province or type stop");
+        System.out.println("Enter a province or enter stop");
         String input = scan.nextLine();
         while (!input.equals("stop")) {
             boolean match = false;
@@ -35,7 +35,7 @@ public class Ex219GuessingTheCapitals_Maps {
             if (!match) {
                 System.out.println("Not a valid input");
             }
-            System.out.println("Enter a province or type stop");
+            System.out.println("Enter a province or enter stop");
             input = scan.nextLine();
         }
     }
