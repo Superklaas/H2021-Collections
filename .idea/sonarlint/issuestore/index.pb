@@ -35,3 +35,7 @@ Asrc/main/java/be/vdab/Ex204CompareDates_List/CompareCalendar.java,f/b/fbef0cba
 Msrc/main/java/be/vdab/Ex217CountOccurrenceOfWords/CountOccurrenceOfWords.java,b/0/b08b6391fabdef2bd6130c5ddccfc64d26ebfa26
 h
 8src/main/java/be/vdab/Ex219GuessingTheCapitals_Maps.java,5/9/59560c0d94b02b854c134f183737dd0a0da19c36
+v
+Fsrc/main/java/be/vdab/Ex204CompareDates_Arrays/CalendarComparator.java,d/a/da60459b00d8c3bb9ac4db687c19c19c8129d468
+w
+Gsrc/main/java/be/vdab/Ex204CompareDates_Arrays/TestCompareCalendar.java,a/b/abe449a4fc1c04314fe04b3db24fc3625755f59f

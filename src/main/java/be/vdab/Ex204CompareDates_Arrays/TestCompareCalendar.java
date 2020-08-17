@@ -2,6 +2,7 @@ package be.vdab.Ex204CompareDates_Arrays;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
 import java.util.Comparator;
 
 public class TestCompareCalendar {
@@ -29,10 +30,10 @@ public class TestCompareCalendar {
         }
 
         // sort array LocalDate objects
-        sort(dates,new CalendarComparator());
+        Arrays.sort(dates,new CalendarComparator());
 
         // print sorted order
-        System.out.println("\noriginal array");
+        System.out.println("\nsorted array");
         for (int i = 0; i < amountOfDates; i++) {
             datesAsString[i] = dates[i].format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         }
@@ -42,6 +43,8 @@ public class TestCompareCalendar {
 
     }
 
+    // sort method for arrays --> actually superfluent because of the existence of the
+    // beautiful Arrays.sort method, used in line 33
     public static void sort (LocalDate[] dates,Comparator<LocalDate> comparator) {
         boolean sorted = false;
         LocalDate temp;
