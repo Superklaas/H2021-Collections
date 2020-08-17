@@ -2,10 +2,7 @@ package be.vdab.Ex204CompareDates_List;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class CompareCalendar {
 
@@ -45,3 +42,21 @@ public class CompareCalendar {
 
     }
 }
+
+
+    /* ALTERNATIVE WITH ARRAYS, DOESN'T WORK EITHER
+    // array LocalDate objects
+    LocalDate[] datesArray = new LocalDate[amountOfDates];
+         for (int i = 0; i < amountOfDates; i++) {
+            LocalDate date = LocalDate.now();
+            date = date.plusDays(20-i);
+            datesArray[i] = date;
+        }
+
+// sort array and convert to list
+LocalDate[] datesArray = (LocalDate[]) dates.toArray();
+Arrays.sort(datesArray, new CalendarComparator());
+dates = Arrays.asList(datesArray.clone());
+     */
+
+
