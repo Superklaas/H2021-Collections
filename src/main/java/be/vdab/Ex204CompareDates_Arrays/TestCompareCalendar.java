@@ -43,7 +43,7 @@ public class TestCompareCalendar {
 
     }
 
-    // sort method for arrays --> actually superfluent because of the existence of the
+    // sort method for arrays --> actually superfluous because of the existence of the
     // beautiful Arrays.sort method, used in line 33
     public static void sort (LocalDate[] dates,Comparator<LocalDate> comparator) {
         boolean sorted = false;
